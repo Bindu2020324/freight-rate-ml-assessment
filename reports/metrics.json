@@ -1,0 +1,67 @@
+{
+  "outliers_removed": 677,
+  "holdout_sep_oct": {
+    "train_rows": 37944,
+    "test_rows_clean": 9379,
+    "test_rows_all": 9523,
+    "ridge_clean": {
+      "MAE": 77.27,
+      "RMSE": 108.39,
+      "MAPE_%": 3.248,
+      "MedianAPE_%": 3.042
+    },
+    "ridge_all_labels": {
+      "MAE": 132.78,
+      "RMSE": 640.32,
+      "MAPE_%": 5.685,
+      "MedianAPE_%": 3.078
+    },
+    "hgb_clean": {
+      "MAE": 103.01,
+      "RMSE": 133.7,
+      "MAPE_%": 4.444,
+      "MedianAPE_%": 4.342
+    },
+    "baseline_lane_median_clean": {
+      "MAE": 88.15,
+      "RMSE": 134.37,
+      "MAPE_%": 3.741,
+      "MedianAPE_%": 3.078
+    }
+  },
+  "holdout_by_equipment_MAPE_%": {
+    "Dry Van": 3.037,
+    "Flatbed": 3.85,
+    "Reefer": 3.275
+  },
+  "rolling_backtest": [
+    {
+      "train_until": "2025-05-31",
+      "test_period": "2025-06-01 to 2025-07-31",
+      "ridge_MAPE_%": 2.061,
+      "hgb_MAPE_%": 3.837,
+      "baseline_MAPE_%": 5.672
+    },
+    {
+      "train_until": "2025-06-30",
+      "test_period": "2025-07-01 to 2025-08-31",
+      "ridge_MAPE_%": 2.145,
+      "hgb_MAPE_%": 4.009,
+      "baseline_MAPE_%": 4.277
+    },
+    {
+      "train_until": "2025-07-31",
+      "test_period": "2025-08-01 to 2025-09-30",
+      "ridge_MAPE_%": 3.531,
+      "hgb_MAPE_%": 3.745,
+      "baseline_MAPE_%": 3.921
+    },
+    {
+      "train_until": "2025-08-31",
+      "test_period": "2025-09-01 to 2025-10-31",
+      "ridge_MAPE_%": 3.248,
+      "hgb_MAPE_%": 4.444,
+      "baseline_MAPE_%": 3.741
+    }
+  ]
+}
